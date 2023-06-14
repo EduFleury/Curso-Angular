@@ -1,0 +1,9 @@
+<div class="class">
+  <h2>Two way data binding</h2>
+  <form>
+      <input type="text" [(ngModel)]="name" name="name" placeholder="Digite seu nome">
+      <input type="submit" value="enviar">
+  </form>
+      <p *ngIf="name != ''; else nameNotFound ">O nome é: {{name}}</p>
+      <ng-template #nameNotFound>Sem nome por equanto</ng-template>
+</div>

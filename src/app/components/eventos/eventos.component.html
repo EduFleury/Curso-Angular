@@ -1,0 +1,7 @@
+<div class="class" >
+  <p *ngIf="show == true; else Mensagem">Exibindo mensagem!</p>
+  <ng-template #Mensagem>
+    <p>Falso</p>
+  </ng-template>
+  <button (click)="clicar()">Botão</button>
+</div>
